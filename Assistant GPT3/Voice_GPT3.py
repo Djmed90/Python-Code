@@ -5,7 +5,7 @@ import time
 import pyaudio
 
 # set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = " API KEY "
 
 # Initalize the text to speech engine
 engine = pyttsx3.init()
