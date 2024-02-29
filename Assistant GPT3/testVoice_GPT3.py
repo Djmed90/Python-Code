@@ -6,7 +6,7 @@ import pygame
 from io import BytesIO
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = " API KEY"
 
 # Initialize pygame
 pygame.mixer.init()
