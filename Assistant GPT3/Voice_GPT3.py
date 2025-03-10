@@ -5,6 +5,7 @@ import time
 import pyaudio
 
 # set your OpenAI API key
+# Looking back prob should ahve put this on the cloud instead of here live and learn
 openai.api_key = " API KEY "
 
 # Initalize the text to speech engine
@@ -37,14 +38,14 @@ def speak_text(text):
 
 def main():
     while True:
-        # wait for the user to say "genius"
-        print("Say 'Genius' to start recording your question..")
+        # wait for the user to say "cortana"
+        print("Say 'cortana' to start recording your question..")
         with sr.Microphone() as source:
             recognizer = sr.Recognizer()
             audio= recognizer.listen(source)
             try:
                 transcription = recognizer.recognize_google(audio)
-                if transcription.lower() == "genius":
+                if transcription.lower() == "cortana":
                     #record audio
                     filename = "input.wav"
                     print("Say your question...")
